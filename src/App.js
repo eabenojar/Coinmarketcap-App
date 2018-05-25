@@ -3,8 +3,22 @@ import './App.css';
 import Coins from './components/coins';
 import Globaldata from './components/globaldata';
 import Search from './components/search';
+import Coininfo from './components/coininfo';
+import { Route } from 'react-router-dom';
 
 class App extends Component {
+
+  render() {
+    return (
+      <div className="App">
+        <Route exact path="/" component={Main} />
+        <Route path="/info" component={Coininfo} />
+      </div>
+    );
+  }
+}
+
+class Main extends Component {
   constructor(){
     super();
     this.state = {
@@ -40,15 +54,16 @@ class App extends Component {
   getCoinLimit(){
     console.log("PRESSED FOR 25 COINS")
   }
-  render() {
-    return (
-      <div className="App">
+  render(){
+    console.log('MAIN staet', this.props);
+    return(
+      <div>
         <Globaldata 
           globaldata = {this.state.globaldata}
         />
         <Search getCoinLimit = {this.getCoinLimit}/>
         <Coins 
-          data ={this.state.data}
+          data ={this.state} props={this.props}
           // name = {this.state.name}
           // price_usd = {this.state.price_usd}
           // rank = {this.state.rank}
@@ -57,7 +72,7 @@ class App extends Component {
           // percent_change_24h = {this.state.percent_change_24h}
         />
       </div>
-    );
+    )
   }
 }
 

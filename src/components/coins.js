@@ -12,7 +12,18 @@ class Coins extends Component{
       market_cap_usd: undefined,
       percent_change_24h: undefined
     }
-      // console.log(this.props, "COINS PAGE");
+     
+  }
+  componentDidMount(){
+    console.log(this.props, "COINS PAGE");
+  }
+  getCoinInfo(allcoins){
+    console.log("TESTING GET COIN", allcoins);
+    this.props.props.history.push({
+      pathname: "/info",
+      allcoins
+    })
+
   }
   render(){
     // console.log(this.props.data, "REnder PAGE");
@@ -41,9 +52,9 @@ class Coins extends Component{
               </div>
             </div>
           </div>
-        {this.props.data.map(allcoins => {
+        {this.props.data.data.map(allcoins => {
         return (
-                  <div className="coin-row" key={allcoins.name}>
+                  <div className="coin-row" key={allcoins.name}  onClick={() =>this.getCoinInfo(allcoins)}>
                     <div className="row">
                       <div className="col-lg-1 col-md-1 col-sm-1">
                         <p className="coin-row-coins">{allcoins.rank}</p>
@@ -58,7 +69,7 @@ class Coins extends Component{
                         <p className="coin-row-coins">${allcoins.price_usd}</p>
                       </div>
                       <div className="col-lg-3 col-md-3 col-sm-3">
-                        <p className="coin-row-coins-marketCap">${allcoins.market_cap_usd}</p>
+                        <p className="coin-row-coins-marketCap">${allcoins.market_cap_usd.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                       </div>
                       <div className="col-lg-2 col-md-2 col-sm-2">
                         <p className="coin-row-coins-24H">{allcoins.percent_change_24h} %</p>
