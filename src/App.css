@@ -52,16 +52,17 @@
   margin: 10px 10px 0 10px;
 }
 .coin-row-header{
-  background-color: #5D8EE5;
+  background-color: #F9F9F9;
   height: 50px;
   padding: 0 10px 0 10px; 
   border-radius: 0px 0px 0 0;
+  margin-top: 50px;
 }
 .coin-row-header-title{
   text-align: center;
-  margin: 10px 10px 0 10px;
-  font-size: 20px;
-  font-weight: 300;
+  margin: 14px 10px 0 10px;
+  font-size: 16px;
+  font-weight: 300; 
 }
 .marketCap{
   text-align: center;

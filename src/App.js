@@ -61,7 +61,7 @@ class Main extends Component {
         <Globaldata 
           globaldata = {this.state.globaldata}
         />
-        <Search getCoinLimit = {this.getCoinLimit}/>
+        {/* <Search getCoinLimit = {this.getCoinLimit}/> */}
         <Coins 
           data ={this.state} props={this.props}
           // name = {this.state.name}

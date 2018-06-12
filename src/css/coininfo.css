@@ -1,0 +1,33 @@
+.coinInfoMain {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.coinInfo-top-container, .coinInfo-bottom-container{
+    height: 50vh;
+    width: 100vw;
+}
+.coinInfo-top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.coinInfo-row {
+    height: 33.3%;
+    width: 80%;
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+}
+.coinInfo-sub-row {
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
