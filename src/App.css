@@ -1,80 +1,92 @@
+.row {
+  width: 100%;
+}
 .App {
   text-align: center;
-  background-color: #C9E6F7;
+  background-color: #fff;
   min-height: 100vh;
   height: auto;
   padding-bottom: 5%;
 }
 .navbar-main {
-  background-color: #FFF;
+  background-color: #fff;
   min-height: 150px;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.navbar-titles{
-   list-style-type: none;
-   font-size: 20px;
-   font-weight: 700;
-   color: #5D8EE5;
+.navbar-titles {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #5d8ee5;
 }
-.navbar-titles-value{
+.navbar-titles-value {
   list-style-type: none;
   font-size: 16px;
   font-weight: 200;
 }
-.navbar-grid{
+.navbar-grid {
   border: 1px solid #bababa;
   border-radius: 6px;
   padding: 15px 15px 15px 20px;
   text-align: left;
 }
 
-
 .coin-row {
-  background-color: #FFF;
-  border-bottom: 1px solid lightgrey;
+  background-color: #fff;
+  border: 1px solid lightgrey;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 .coin-row:hover {
-  background-color: #E4E4E4;
+  background-color: #e4e4e4;
 }
 .coin-row-coins {
   margin: 10px;
   text-align: center;
+  vertical-align: middle;
+  font-weight: 800;
 }
-.coin-row-coins-marketCap{
+.coin-row-coins-marketCap {
   text-align: center;
   margin: 10px 10px 0 10px;
+  font-weight: 800;
 }
-.coin-row-coins-24H{
+.coin-row-coins-24H {
   text-align: center;
   margin: 10px 10px 0 10px;
+  font-weight: 800;
 }
-.coin-row-header{
-  background-color: #F9F9F9;
+.coin-row-header {
+  background-color: #fff;
   height: 50px;
-  padding: 0 10px 0 10px; 
+  padding: 0 10px 0 10px;
   border-radius: 0px 0px 0 0;
   margin-top: 50px;
 }
-.coin-row-header-title{
+.coin-row-header-title {
   text-align: center;
   margin: 14px 10px 0 10px;
-  font-size: 16px;
-  font-weight: 300; 
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: grey;
 }
-.marketCap{
+.marketCap {
   text-align: center;
 }
-.search-bar-form{
+.search-bar-form {
   width: 50%;
   padding: 10px 0px 10px 0px;
   background-color: none;
-  
 }
-.search-bar{
-  background-color: #5D8EE5;
+.search-bar {
+  background-color: #5d8ee5;
   min-height: 70px;
   border-radius: 12px 12px 0 0;
   margin: 50px 0 0px 0;
@@ -83,7 +95,7 @@
   flex-direction: row;
   align-items: center;
 }
-.search-bar-input{
+.search-bar-input {
   height: 40px;
   background-color: none;
   width: 95%;
@@ -91,14 +103,14 @@
   border-radius: 5px;
   border: 0px solid none;
 }
-.dropdown{
+.dropdown {
   width: 25%;
   padding: 10px;
 }
 .dropdown-menu {
-    width: 100% !important;
-    height: auto !important;
+  width: 100% !important;
+  height: auto !important;
 }
-.dropdown-button{
+.dropdown-button {
   width: 100%;
 }
