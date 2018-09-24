@@ -33,7 +33,12 @@
   padding: 15px 15px 15px 20px;
   text-align: left;
 }
-
+.main-title {
+  font-family: "Kosugi Maru", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 36px;
+}
 .coin-row {
   background-color: #fff;
   border: 1px solid lightgrey;
@@ -41,7 +46,7 @@
   display: flex;
   align-items: center;
   border-radius: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .coin-row:hover {
   background-color: #e4e4e4;
@@ -76,6 +81,9 @@
   font-weight: 600;
   text-transform: uppercase;
   color: grey;
+}
+.img-responsive {
+  float: left;
 }
 .marketCap {
   text-align: center;
