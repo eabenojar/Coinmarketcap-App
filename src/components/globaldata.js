@@ -19,6 +19,7 @@ class Globaldata extends Component {
               <div className="navbar-grid">
                 <li className="navbar-titles">TOTAL MARKET CAP</li>
                 <li className="navbar-titles-value">
+                  $
                   {this.props.globaldata.total_market_cap_usd
                     .toString()
                     .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
